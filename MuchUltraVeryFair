@@ -266,7 +266,7 @@ local function GetQuestMobs(quest)
     elseif quest == "Rigged Game" then 
         EnemyType = {"Arlo", "John", "Seraphina"}
     elseif quest == "Trouble in the backrooms" then 
-        EnemyType = {"Seer", "John", "Seraphina"}
+        EnemyType = {"Seer"}
     elseif quest == "Something is in the sewers" then
         EnemyType = {"Cultist"}
     end
@@ -545,7 +545,7 @@ local QuestSelect = PageFarm.AddDropdown("Quest Select", {
     "Gaming Disorder",
     "Kingdom",
     "Rigged Game",
-    "Trouble in the backrooms"
+    "Trouble in the backrooms",
     "Something is in the sewers"
     }, function(value)
         FarmSettings.SelectedQuest = value
